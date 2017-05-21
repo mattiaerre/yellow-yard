@@ -3,8 +3,9 @@
 React Native tutorial, FrontendMasters course and see what happens ...
 
 ```bash
+react-native init YellowYard
 cd YellowYard
-react-natice run-ios
+react-native run-ios
 ```
 
 ## Resources
