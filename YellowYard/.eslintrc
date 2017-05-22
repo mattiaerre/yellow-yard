@@ -3,5 +3,8 @@
   "rules": {
     "comma-dangle": "off",
     "react/jsx-filename-extension": "off"
+  },
+  "env": {
+    "jest": true
   }
 }
