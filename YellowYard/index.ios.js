@@ -6,17 +6,10 @@
 
 import React from 'react';
 import { AppRegistry } from 'react-native';
-import { ApolloProvider } from 'react-apollo';
-import ApolloClient, { createNetworkInterface } from 'apollo-client';
-import App from './app/index';
-
-const networkInterface = createNetworkInterface({ uri: 'https://pink-pineapple.herokuapp.com/graphql' });
-const client = new ApolloClient({ networkInterface });
+import App from './app/pace-converter';
 
 const YellowYard = () => (
-  <ApolloProvider client={client}>
-    <App name="OpenComponents" />
-  </ApolloProvider>
+  <App />
 );
 
 AppRegistry.registerComponent('YellowYard', () => YellowYard);

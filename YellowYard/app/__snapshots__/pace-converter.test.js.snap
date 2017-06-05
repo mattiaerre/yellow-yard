@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> expect to match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5F5F5",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo-Bold",
+        },
+        Object {
+          "fontSize": 30,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    Pace converter
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 15,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    Universal running pace converter.
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 20,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    min/km
+  </Text>
+  <TextInput
+    onChangeText={[Function]}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 20,
+          "margin": 10,
+        },
+        Object {
+          "alignSelf": "center",
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+          "textAlign": "center",
+          "width": 100,
+        },
+      ]
+    }
+    value="4:45"
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 20,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    km/h 
+    12.632
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 20,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    min/mi 
+    7:38.64
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 20,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    mi/h 
+    7.849
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "fontFamily": "Menlo",
+        },
+        Object {
+          "fontSize": 10,
+          "margin": 10,
+        },
+      ]
+    }
+  >
+    v1.0.0-alpha.1
+  </Text>
+</View>
+`;

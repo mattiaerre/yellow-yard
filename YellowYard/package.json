@@ -1,6 +1,6 @@
 {
   "name": "YellowYard",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -9,6 +9,7 @@
   "dependencies": {
     "apollo-client": "^1.2.2",
     "graphql-tag": "^2.1.0",
+    "pace-converter": "^1.0.0-alpha.1",
     "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.6",
     "react-apollo": "^1.2.0",
