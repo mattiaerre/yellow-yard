@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ListView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
@@ -34,13 +34,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     const { name, data: { loading } } = props;
-    this.state = { name, loading };
+    const dataSource = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    this.state = { name, loading, dataSource };
 
     this.handlePress = this.handlePress.bind(this);
   }
 
   componentWillReceiveProps({ data: { loading, registry } }) {
-    this.setState({ loading, registry });
+    const dataSource = this.state.dataSource;
+    this.setState(
+      { loading, registry, dataSource: dataSource.cloneWithRows(registry.dependencies) }
+    );
   }
 
   handlePress() {
@@ -61,6 +65,10 @@ class App extends Component {
               : <Text style={[styles.menlo]}>{this.state.registry.ocVersion}</Text>
           }
         </View>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={data => <Text style={[styles.menlo]}>{data}</Text>}
+        />
       </View >
     );
   }
@@ -81,6 +89,7 @@ export default graphql(gql`
       href
       ocVersion
       type
+      dependencies
     }
   }
 `)(App);
