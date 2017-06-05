@@ -9,6 +9,12 @@ cd YellowYard
 react-native run-ios
 ```
 
+## Releases
+
+### v1.0.0-alpha.1
+
+![1.0.0-alpha.1](1.0.0-alpha.1.png "1.0.0-alpha.1")
+
 ## Resources
 
 - [X] https://facebook.github.io/react-native/docs/getting-started.html
