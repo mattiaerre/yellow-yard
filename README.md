@@ -13,7 +13,7 @@ react-native run-ios
 
 ### v1.0.0-alpha.1
 
-![1.0.0-alpha.1](1.0.0-alpha.1.png "1.0.0-alpha.1")
+![1.0.0-alpha.1](1.0.0-alpha.1-phone.png "1.0.0-alpha.1")
 
 ## Resources
 
