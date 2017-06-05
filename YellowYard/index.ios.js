@@ -5,9 +5,7 @@
  */
 
 import React from 'react';
-import {
-  AppRegistry
-} from 'react-native';
+import { AppRegistry } from 'react-native';
 import { ApolloProvider } from 'react-apollo';
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
 import App from './app/index';
